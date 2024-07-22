@@ -1,0 +1,133 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.cart {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+.product img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+
+.product-details h3 {
+    margin: 0;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkout-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #64696e;
+}
+
+.remove-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* Alinea el menú desplegable debajo del enlace principal */
+}
+
+.dropdown-content a {
+    color: black; /* Cambia 'black' por el color que prefieras */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #c8c8c8;
+}
+
+.navbar a {
+    color: black; /* Cambia 'red' por el color que prefieras */
+    text-decoration: none; /* Quita la barra de abajo */
+    
+}
+
+.navbar {
+    background-color: #55a1e0; /* Cambia el color de fondo de la barra de navegación */
+    padding: 0; /* Elimina el relleno interno de la barra de navegación */
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: space-around; /* Distribuye uniformemente los elementos a lo largo de la barra */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 50px; /* Altura de la barra de navegación */
+    border-radius: 10px;
+}
+
+header {
+    font-family: Arial, sans-serif;
+    background-color: #6ca0ea;
+    color: #ffffff;
+    align-items: center;
+
+}

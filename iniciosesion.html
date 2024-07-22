@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="iniciosesion.css">
+</head>
+<body>
+
+    <header>
+        <div id="mySidenav" class="navbar">
+            <div class="dropdown">
+                <a href="iniciochido.html" class="dropbtn">Inicio</a>
+                <div class="dropdown-content">
+                    <a href="alimentos.html">Alimentos</a>
+                    <a href="electronica.html">Electrónicos</a>
+                    <a href="ropa.html">Ropa</a>
+                </div>
+            </div>
+            <a href="carrito.html">Carrito</a>
+            <a href="iniciosesion.html">Inicio de Sesion</a>
+        </div>
+    </header>
+
+
+    <div id="login" class="popup" style="display: flex;">
+        <div class="popup-content">
+            <h2>Inicio de Sesión</h2>
+            <form id="loginForm" onsubmit="return login(event)">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Iniciar Sesión</button>
+                <div class="links">
+                    <a href="#">¿Perdiste tu contraseña?</a>
+                    <a href="#">¿No tienes Cuenta? Regístrate</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="iniciosesion.js"></script>
+</body>
+</html>

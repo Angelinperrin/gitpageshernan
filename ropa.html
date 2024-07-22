@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa</title>
+    <script src="confirmacion.js" defer></script>
+    <link rel="stylesheet" href="ropacss.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <header>
+        <div id="mySidenav" class="navbar">
+            <div class="dropdown">
+                <a href="iniciochido.html" class="dropbtn">Inicio</a>
+                <div class="dropdown-content">
+                    <a href="alimentos.html">Alimentos</a>
+                    <a href="electronica.html">Electrónicos</a>
+                    <a href="#">Ropa</a>
+                </div>
+            </div>
+            <a href="carrito.html">Carrito</a>
+            <a href="iniciosesion.html">Inicio de Sesion</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="producto">
+            <img id="vestir" src="vestir.jpeg" alt="vestir" class="image" onclick="changeImage('vestir', 'iphone2.png')">
+            <h2>Camisa </h2>
+            <p>Precio: $300</p>
+            <button onclick="addToCart('Camisa', 300, 'vestir.jpeg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="falda" src="falda.jpeg" alt="falda" class="image" onclick="changeImage('falda', 'ipad2.png')">
+            <h2>Falda</h2>
+            <p>Precio: $400</p>
+            <button onclick="addToCart('Falda', 400, 'falda.jpeg')">Añadir al carrito</button>
+        </section>
+        <!-- Agrega más productos aquí -->
+        <section class="producto">
+            <img id="vestido" src="vestido.jpeg" alt="vestido" class="image" onclick="changeImage('vestido', 'laptop2.png')">
+            <h2>Vestido</h2>
+            <p>Precio: $700</p>
+            <button onclick="addToCart('Vestido', 700, 'vestido.jpeg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="blusa" src="blusa.jpeg" alt="blusa" class="image" onclick="changeImage('blusa', 'audi2.png')">
+            <h2>Blusa</h2>
+            <p>Precio: $200</p>
+            <button onclick="addToCart('Blusa', 200, 'blusa.jpeg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="chaqueta" src="chaqueta.jpeg" alt="chaqueta" class="image" onclick="changeImage('chaqueta', 'Cargador2.png')">
+            <h2>Chaqueta</h2>
+            <p>Precio: $1,999</p>
+            <button onclick="addToCart('Chaqueta', 1999, 'chaqueta.jpeg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="camisa" src="camisa.jpeg" alt="camisa" class="image" onclick="changeImage('camisa', 'lavadora2.png')">
+            <h2>Camisa</h2>
+            <p>Precio: $199</p>
+            <button onclick="addToCart('Camisa', 199, 'camisa.jpeg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="abrigo" src="abrigo.jpeg" alt="abrigo" class="image" onclick="changeImage('abrigo', 'Refri2.png')">
+            <h2>Abrigo</h2>
+            <p>Precio: $1299</p>
+            <button onclick="addToCart('Abrigo', 1299, 'abrigo.jpg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="hoddie" src="hoddie.jpeg" alt="hoddie" class="image" onclick="changeImage('hoddie', 'platano2.png')">
+            <h2>Hoddie</h2>
+            <p>Precio: $500</p>
+            <button onclick="addToCart('Hoddie', 500, 'hoddie.jpeg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="boxer" src="boxer.jpeg" alt="boxer" class="image" onclick="changeImage('boxer', 'platano2.png')">
+            <h2>Paquete de Boxer´s</h2>
+            <p>Precio: $200</p>
+            <button onclick="addToCart('Paquete de Boxer´s', 200, 'boxer.jpeg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="calcetas" src="calcetas.jpeg" alt="calcetas" class="image" onclick="changeImage('calcetas', 'leche2.png')">
+            <h2>Calcetas</h2>
+            <p>Precio: $50</p>
+            <button onclick="addToCart('Calcetas', 50, 'calcetas.jpeg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="shot" src="shot.jpeg" alt="shot" class="image" onclick="changeImage('shot', 'huevo2.png')">
+            <h2>Short Deportivo</h2>
+            <p>Precio: $500</p>
+            <button onclick="addToCart('Short Deportivo', 500, 'shot.jpeg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="pantalon" src="pantalon.jpeg" alt="pantalon" class="image" onclick="changeImage('pantalon', 'foca2.png')">
+            <h2>Pantalon AE</h2>
+            <p>Precio: $600</p>
+            <button onclick="addToCart('Pantalon AE', 600, 'pantalon.jpeg')">Añadir al carrito</button>
+        </section>
+        
+    </main>
+    
+    <div id="cart-animation" class="cart-animation">
+        <img id="animation-image" src="" alt="Animación de producto">
+    </div>
+    
+</body>
+</html>

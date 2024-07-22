@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+}
+
+.checkout-header {
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+.checkout-header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    
+}
+
+.checkout-process {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(159, 211, 222, 0.8), rgba(255, 255, 255, 0.7));
+
+}
+
+
+.checkout-step {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+    
+}
+
+.checkout-step h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #272626;
+    margin-bottom: 20px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+}
+
+input {
+    
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.button-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+.centered-input {
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+    z-index: 1;
+    top: 100%; /* Alinea el menú desplegable debajo del enlace principal */
+}
+
+.dropdown-content a {
+    color: black; /* Cambia 'black' por el color que prefieras */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #c8c8c8;
+}
+
+.navbar a {
+    color: black; /* Cambia 'red' por el color que prefieras */
+    text-decoration: none; /* Quita la barra de abajo */
+    
+}
+
+.navbar {
+    background-color: #55a1e0; /* Cambia el color de fondo de la barra de navegación */
+    padding: 0; /* Elimina el relleno interno de la barra de navegación */
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: space-around; /* Distribuye uniformemente los elementos a lo largo de la barra */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 50px; /* Altura de la barra de navegación */
+    border-radius: 10px;
+}
+
+header {
+    font-family: Arial, sans-serif;
+    background-color: #6ca0ea;
+    color: #ffffff;
+    align-items: center;
+    
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.payment-methods img {
+    width: 50px;
+    height: auto;
+    margin: 0 10px;
+}

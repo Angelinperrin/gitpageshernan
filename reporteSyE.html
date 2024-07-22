@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo de Reportes</title>
+    <link rel="stylesheet" href="SyE.css">
+</head>
+<body>
+    <header>
+        <h1>Módulo de Reportes</h1>
+    </header>
+    <main>
+        <section id="definicion">
+            <h2>Reportes Generales</h2>
+            <p>Recopilacion insana sobre productos ARSEL generados en un lapso de 6(seis) meses</p>
+        </section>
+        <section id="funciones">
+            <button onclick="generarReporte('ventas')"> Reporte de Ventas</button>
+            <button onclick="generarReporte('inventario')"> Reporte de Inventario</button>
+            <button onclick="generarReporte('clientes')"> Reporte de Clientes</button>
+            <button onclick="generarReporte('entregas')"> Reporte de Entregas</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ARSEL. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="cerrarPopup()">&times;</span>
+            <div id="contenidoPopup"></div>
+        </div>
+    </div>
+
+    <script src="SyE.js"></script>
+</body>
+</html>

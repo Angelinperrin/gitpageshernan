@@ -1,0 +1,136 @@
+/* ropacss.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: Arial, sans-serif;
+    background-color: #6ca0ea;
+    color: #ffffff;
+    align-items: center;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #55a1e0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #c8c8c8;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(27, 46, 60, 0.8);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.producto {
+    background-color: rgba(153, 185, 213, 0.8);
+    border: 5px solid #ffffff;
+    padding: 0.1rem;
+    margin: 50px;
+    text-align: center;
+}
+
+.producto img {
+    width: 200px;
+    height: 100px;
+}
+
+footer {
+    background-color: #ba2222;
+    color: #580808;
+    text-align: center;
+    padding: 0rem;
+    margin-top: 50px;
+}
+
+/* Animación del carrito */
+.cart-animation {
+    position: fixed;
+    top: 60px;
+    right: 770px;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    display: none;
+}
+
+.cart-animation img {
+    width: 100%;
+    height: 100%;
+}
+
+.cart-animation.animate {
+    display: block;
+    animation: slideToCart 1.5s forwards;
+}
+
+@keyframes slideToCart {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}

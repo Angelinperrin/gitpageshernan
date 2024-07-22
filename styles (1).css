@@ -1,0 +1,107 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: Arial, sans-serif;
+    background-color: #9e7676;
+    color: #f4f4f4;
+    align-items: center;
+
+}
+
+main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.producto {
+    background-color: rgba(203, 203, 203, 0.8);
+    border: 5px solid #ffffff;
+    padding: 0.1rem;
+    margin: 50px;
+    text-align: center;
+}
+
+footer {
+    background-color: FFFDD7#ba2222;
+    color: #580808;
+    text-align: center;
+    padding: 0rem;
+    margin-top: 50px;
+}
+
+.producto img {
+    width: 200px; /* ancho */
+    height: 100px; /* altura */
+}
+
+  /*barra lateral color letras*/
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #e8dcdc;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  
+  /*barra lateral color letras*/
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #b20000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #dc0000;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+.logo-container img {
+    width: 600px; /* Ancho deseado para tu logo */
+    height: auto; /* Para mantener la proporción de aspecto */
+}
+
+button{
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(70, 60, 42, 0.8);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}

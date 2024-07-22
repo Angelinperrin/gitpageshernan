@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ropacss.css">
+    <title>Alimentos</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="confirmacion.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="mySidenav" class="navbar">
+            <div class="dropdown">
+                <a href="iniciochido.html" class="dropbtn">Inicio</a>
+                <div class="dropdown-content">
+                    <a href="#">Alimentos</a>
+                    <a href="electronica.html">Electrónicos</a>
+                    <a href="ropa.html">Ropa</a>
+                </div>
+            </div>
+            <a href="carrito.html">Carrito</a>
+            <a href="iniciosesion.html">Inicio de Sesion</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="producto">
+            <img id="pan" src="pan.webp" alt="pan" class="image" onclick="changeImage('pan', 'iphone2.png')">
+            <h2>Pan Bimbo </h2>
+            <p>Precio: $60</p>
+            <button onclick="addToCart('Pan Bimbo', 300, 'pan.webp')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="lonc" src="lonc.webp" alt="lonc" class="image" onclick="changeImage('lonc', 'ipad2.png')">
+            <h2>Bimbo Lunch</h2>
+            <p>Precio: $40</p>
+            <button onclick="addToCart('Bimbo Lunch', 400, 'lonc.webp')">Añadir al carrito</button>
+        </section>
+        <!-- Agrega más productos aquí -->
+        <section class="producto">
+            <img id="panini" src="panini.webp" alt="panini" class="image" onclick="changeImage('panini', 'laptop2.png')">
+            <h2>Paninis</h2>
+            <p>Precio: $60</p>
+            <button onclick="addToCart('Paninis', 700, 'panini.webp')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="roles" src="roles.webp" alt="roles" class="image" onclick="changeImage('roles', 'audi2.png')">
+            <h2>Roles de Canela</h2>
+            <p>Precio: $20</p>
+            <button onclick="addToCart('Roles de Canela', 200, 'roles.webp')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="mantecadas" src="mantecadas.webp" alt="mantecadas" class="image" onclick="changeImage('mantecadas', 'Cargador2.png')">
+            <h2>Mantecadas</h2>
+            <p>Precio: $19</p>
+            <button onclick="addToCart('Mantecadas', 1999, 'mantecadas.webp')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="panque" src="panque.jpeg" alt="panque" class="image" onclick="changeImage('panque', 'lavadora2.png')">
+            <h2>Panque</h2>
+            <p>Precio: $39</p>
+            <button onclick="addToCart('Panque', 199, 'panque.jpeg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="nito" src="nito.webp" alt="nito" class="image" onclick="changeImage('nito', 'Refri2.png')">
+            <h2>Nito</h2>
+            <p>Precio: $12</p>
+            <button onclick="addToCart('Nito', 1299, 'nito.webp')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="bimbollos" src="bimbollos.jpg" alt="bimbollos" class="image" onclick="changeImage('bimbollos', 'platano2.png')">
+            <h2>Bimbollos</h2>
+            <p>Precio: $50</p>
+            <button onclick="addToCart('Bimbollos', 500, 'bimbollos.jpeg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="tostado" src="tostado.webp" alt="tostado" class="image" onclick="changeImage('tostado', 'platano2.png')">
+            <h2>Pan Tostado</h2>
+            <p>Precio: $30</p>
+            <button onclick="addToCart('Pan Tostado', 200, 'tostado.webp')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="galletas" src="galletas.jpg" alt="galletas" class="image" onclick="changeImage('galletas', 'leche2.png')">
+            <h2>Galletas de Arroz</h2>
+            <p>Precio: $50</p>
+            <button onclick="addToCart('Galletas de Arroz', 50, 'galletas.jpg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="huevo23" src="huevo23.webp" alt="huevo23" class="image" onclick="changeImage('huevo23', 'huevo2.png')">
+            <h2>Huevo San Juan</h2>
+            <p>Precio: $40</p>
+            <button onclick="addToCart('Huevo San Juan', 500, 'huevo23.webp')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="leche232" src="leche232.webp" alt="leche232" class="image" onclick="changeImage('leche232', 'foca2.png')">
+            <h2>Leche Alpura</h2>
+            <p>Precio: $30</p>
+            <button onclick="addToCart('Leche Alpura', 600, 'leche232.webp')">Añadir al carrito</button>
+        </section>
+        
+    </main>
+    
+    <div id="cart-animation" class="cart-animation">
+        <img id="animation-image" src="" alt="Animación de producto">
+    </div>
+
+</body>
+</html>

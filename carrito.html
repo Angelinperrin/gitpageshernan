@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="carritoxd.css">
+    <script src="java.js" defer></script>
+    <script src="confirmacion.js" defer></script>
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+    <header>
+        <div id="mySidenav" class="navbar">
+            <div class="dropdown">
+                <a href="iniciochido.html" class="dropbtn">Inicio</a>
+                <div class="dropdown-content">
+                    <a href="alimentos.html">Alimentos</a>
+                    <a href="electronica.html">Electrónicos</a>
+                    <a href="ropa.html">Ropa</a>
+                </div>
+            </div>
+            <a href="carrito.html">Carrito</a>
+            <a href="iniciosesion.html">Inicio de Sesion</a>
+        </div>
+    </header>
+
+    <div class="cart">
+        <h2>Carrito de Compras</h2>
+        <div id="cartItems">
+            <!-- Los elementos del carrito se agregarán aquí mediante JavaScript -->
+        </div>
+        <div class="total">
+            <h3>Total:</h3>
+            <p id="totalAmount">$0.00</p>
+        </div>
+        <button id="checkoutButton" class="checkout-button">Finalizar Compra</button>
+    </div>
+
+    <!-- <script>
+        // Recupera los productos del carrito del localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Función para renderizar los productos en el carrito
+function renderCart() {
+    const cartItemsElement = document.getElementById('cartItems');
+    let totalAmount = 0;
+
+    // Limpia el contenido del carrito antes de renderizar
+    cartItemsElement.innerHTML = '';
+
+    // Renderiza cada producto en el carrito
+    cart.forEach(item => {
+        const productElement = document.createElement('div');
+        productElement.classList.add('product');
+
+        const productImageElement = document.createElement('img');
+        productImageElement.src = item.image; // Aquí se establece la ruta de la imagen
+        productImageElement.alt = item.name;
+
+        const productNameElement = document.createElement('h3');
+        productNameElement.textContent = item.name;
+
+        const productPriceElement = document.createElement('p');
+        productPriceElement.textContent = 'Precio: $' + item.price.toFixed(2);
+
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Eliminar';
+        removeButton.classList.add('remove-button');
+        removeButton.onclick = () => removeProduct(item);
+
+        productElement.appendChild(productImageElement);
+        productElement.appendChild(productNameElement);
+        productElement.appendChild(productPriceElement);
+        productElement.appendChild(removeButton);
+
+        cartItemsElement.appendChild(productElement);
+
+        totalAmount += item.price;
+    });
+
+    // Renderiza el total
+    document.getElementById('totalAmount').textContent = '$' + totalAmount.toFixed(2);
+}
+
+        // Función para eliminar un producto del carrito
+        function removeProduct(product) {
+            // Filtra el carrito para eliminar el producto seleccionado
+            cart = cart.filter(item => item.name !== product.name);
+
+            // Guarda el carrito actualizado en el localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Vuelve a renderizar el carrito
+            renderCart();
+        }
+
+        // Renderiza el carrito al cargar la página
+        window.onload = renderCart;
+
+// Obtén el botón "Finalizar Compra" por su id
+        const checkoutButton = document.getElementById('checkoutButton');
+
+// Agrega un evento de clic al botón
+            checkoutButton.addEventListener('click', function() {
+    // Redirige al usuario a otra página HTML
+            window.location.href = 'confirmacion.html'; // Cambia 'paginacompra.html' por la URL de la página a la que deseas redirigir
+        });
+
+    
+    </script> -->
+<script>
+            checkoutButton.addEventListener('click', function() {
+    // Redirige al usuario a otra página HTML
+            window.location.href = 'confirmacion.html'; // Cambia 'paginacompra.html' por la URL de la página a la que deseas redirigir
+        });
+</script>
+
+</body>
+</html>

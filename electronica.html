@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ropacss.css">
+    <title>Electronica</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="confirmacion.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="mySidenav" class="navbar">
+            <div class="dropdown">
+                <a href="iniciochido.html" class="dropbtn">Inicio</a>
+                <div class="dropdown-content">
+                    <a href="alimentos.html">Alimentos</a>
+                    <a href="#">Electrónicos</a>
+                    <a href="ropa.html">Ropa</a>
+                </div>
+            </div>
+            <a href="carrito.html">Carrito</a>
+            <a href="iniciosesion.html">Inicio de Sesion</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="producto">
+            <img id="iphone" src="iphone.jpg" alt="iphone" class="image" onclick="changeImage('iphone', 'iphone2.png')">
+            <h2>Iphone 15</h2>
+            <p>Precio: $20,000</p>
+            <!-- Añade la ruta de la imagen al llamar a addToCart -->
+            <button onclick="addToCart('Iphone 15', 20000, 'iphone.jpg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="ipad" src="ipad.jpg" alt="ipad" class="image" onclick="changeImage('ipad', 'ipad2.png')">
+            <h2>Ipad</h2>
+            <p>Precio: $10,000</p>
+            <button onclick="addToCart('Ipad', 10000, 'ipad.jpg')">Añadir al carrito</button>
+        </section>
+        <!-- Agrega más productos aquí -->
+        <section class="producto">
+            <img id="laptop" src="laptop.jpg" alt="laptop" class="image" onclick="changeImage('laptop', 'laptop2.png')">
+            <h2>laptop</h2>
+            <p>Precio: $19,000</p>
+            <button onclick="addToCart('Laptop', 19000, 'laptop.jpg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="AirPods" src="audi.jpg" alt="AirPods" class="image" onclick="changeImage('AirPods', 'audi2.png')">
+            <h2>AirPods Pro</h2>
+            <p>Precio: $1,099</p>
+            <button onclick="addToCart('AirPods Pro', 1099, 'audi.jpg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="Cargador" src="cargador.jpg" alt="Cargador" class="image" onclick="changeImage('Cargador', 'Cargador2.png')">
+            <h2>Cargador Iphone</h2>
+            <p>Precio: $699</p>
+            <button onclick="addToCart('Cargador', 699, 'cargador.jpg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="Lavadora" src="lavadora.avif" alt="Lavadora" class="image" onclick="changeImage('Lavadora', 'lavadora2.png')">
+            <h2>Lavadora</h2>
+            <p>Precio: $12,999</p>
+            <button onclick="addToCart('Lavadora', 12999, 'lavadora.avif')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="Refrigerador" src="refri.jpg" alt="Refrigerador" class="image" onclick="changeImage('Refrigerador', 'Refri2.png')">
+            <h2>Refrigerador</h2>
+            <p>Precio: $12,999</p>
+            <button onclick="addToCart('Refrigerador', 12999, 'refri.jpg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="Microondas" src="micro.jpeg" alt="Microondas" class="image" onclick="changeImage('Microondas', 'micro2.png')">
+            <h2>Microondas</h2>
+            <p>Precio: $2,000</p>
+            <button onclick="addToCart('Microondas', 2000, 'micro.jpeg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="hornoe" src="hornoe.jpeg" alt="hornoe" class="image" onclick="changeImage('hornoe', 'platano2.png')">
+            <h2>Horno Electrico</h2>
+            <p>Precio: $3,000</p>
+            <button onclick="addToCart('Horno Electrico', 200, 'hornoe.jpeg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="licuadora" src="licuadora.jpeg" alt="licuadora" class="image" onclick="changeImage('licuadora', 'leche2.png')">
+            <h2>Licuadora</h2>
+            <p>Precio: $1,000</p>
+            <button onclick="addToCart('Licuadora', 50, 'licuadora.jpeg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="ventilador" src="ventilador.jpeg" alt="ventilador" class="image" onclick="changeImage('ventilador', 'huevo2.png')">
+            <h2>Ventilador</h2>
+            <p>Precio: $1,000</p>
+            <button onclick="addToCart('Ventilador', 500, 'ventilador.jpeg')">Añadir al carrito</button>
+        </section>
+        <section class="producto">
+            <img id="tostadora" src="tostadora.jpeg" alt="tostadora" class="image" onclick="changeImage('tostadora', 'foca2.png')">
+            <h2>Tostadora</h2>
+            <p>Precio: $700</p>
+            <button onclick="addToCart('Tostadora', 600, 'tostadora.jpeg')">Añadir al carrito</button>
+        </section>
+        
+    </main>
+
+    <div id="cart-animation" class="cart-animation">
+        <img id="animation-image" src="" alt="Animación de producto">
+    </div>
+
+</body>
+</html>
